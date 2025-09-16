@@ -80,13 +80,13 @@ namespace Eigenverft.AirGap
             // 
             this.transparentLabelExText.BackColor = System.Drawing.Color.Transparent;
             this.transparentLabelExText.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(26)))));
-            this.transparentLabelExText.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.transparentLabelExText.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.transparentLabelExText.ForeColor = System.Drawing.Color.Black;
             this.transparentLabelExText.FullShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.transparentLabelExText.FullShadowDepth = 2;
             this.transparentLabelExText.FullShadowEnabled = false;
             this.transparentLabelExText.GradientAngle = 45F;
-            this.transparentLabelExText.Location = new System.Drawing.Point(12, 266);
+            this.transparentLabelExText.Location = new System.Drawing.Point(52, 45);
             this.transparentLabelExText.Name = "transparentLabelExText";
             this.transparentLabelExText.ShadowColor = System.Drawing.Color.Gray;
             this.transparentLabelExText.ShadowEnabled = true;
@@ -94,7 +94,7 @@ namespace Eigenverft.AirGap
             this.transparentLabelExText.Size = new System.Drawing.Size(217, 17);
             this.transparentLabelExText.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(27)))), ((int)(((byte)(48)))));
             this.transparentLabelExText.TabIndex = 3;
-            this.transparentLabelExText.Text = "Downloading required offline files";
+            this.transparentLabelExText.Text = "Steer your own ship - locally.";
             // 
             // progressBarEx31
             // 
