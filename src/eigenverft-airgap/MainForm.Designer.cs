@@ -32,7 +32,8 @@ namespace Eigenverft.AirGap
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.transparentLabelEx31 = new Eigenverft.AirGap.Controls.TransparentLabelEx3();
+            this.transparentLabelClose = new Eigenverft.AirGap.Controls.TransparentLabelEx3();
+            this.transparentLabelExText = new Eigenverft.AirGap.Controls.TransparentLabelEx3();
             this.progressBarEx31 = new Eigenverft.AirGap.Controls.ProgressBarEx3();
             this.MainPanel.SuspendLayout();
             this.SuspendLayout();
@@ -41,34 +42,59 @@ namespace Eigenverft.AirGap
             // 
             this.MainPanel.BackgroundImage = global::Eigenverft.AirGap.Properties.Resources.eigenverft_background_part_logo;
             this.MainPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.MainPanel.Controls.Add(this.transparentLabelEx31);
+            this.MainPanel.Controls.Add(this.transparentLabelClose);
+            this.MainPanel.Controls.Add(this.transparentLabelExText);
             this.MainPanel.Controls.Add(this.progressBarEx31);
+            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainPanel.Location = new System.Drawing.Point(0, 0);
             this.MainPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.MainPanel.MaximumSize = new System.Drawing.Size(500, 320);
+            this.MainPanel.MinimumSize = new System.Drawing.Size(500, 320);
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(500, 320);
             this.MainPanel.TabIndex = 0;
             // 
-            // transparentLabelEx31
+            // transparentLabelClose
             // 
-            this.transparentLabelEx31.AutoSize = true;
-            this.transparentLabelEx31.BackColor = System.Drawing.Color.Transparent;
-            this.transparentLabelEx31.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(26)))));
-            this.transparentLabelEx31.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.transparentLabelEx31.ForeColor = System.Drawing.Color.Black;
-            this.transparentLabelEx31.FullShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.transparentLabelEx31.FullShadowDepth = 2;
-            this.transparentLabelEx31.FullShadowEnabled = false;
-            this.transparentLabelEx31.GradientAngle = 45F;
-            this.transparentLabelEx31.Location = new System.Drawing.Point(12, 266);
-            this.transparentLabelEx31.Name = "transparentLabelEx31";
-            this.transparentLabelEx31.ShadowColor = System.Drawing.Color.DarkGray;
-            this.transparentLabelEx31.ShadowEnabled = true;
-            this.transparentLabelEx31.ShadowOffset = new System.Drawing.Point(1, 0);
-            this.transparentLabelEx31.Size = new System.Drawing.Size(170, 17);
-            this.transparentLabelEx31.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(27)))), ((int)(((byte)(48)))));
-            this.transparentLabelEx31.TabIndex = 3;
-            this.transparentLabelEx31.Text = "Downloading required files";
+            this.transparentLabelClose.BackColor = System.Drawing.Color.Transparent;
+            this.transparentLabelClose.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(26)))));
+            this.transparentLabelClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transparentLabelClose.ForeColor = System.Drawing.Color.Black;
+            this.transparentLabelClose.FullShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.transparentLabelClose.FullShadowDepth = 2;
+            this.transparentLabelClose.FullShadowEnabled = false;
+            this.transparentLabelClose.GradientAngle = 45F;
+            this.transparentLabelClose.Location = new System.Drawing.Point(470, 9);
+            this.transparentLabelClose.Name = "transparentLabelClose";
+            this.transparentLabelClose.ShadowColor = System.Drawing.Color.Gray;
+            this.transparentLabelClose.ShadowEnabled = true;
+            this.transparentLabelClose.ShadowOffset = new System.Drawing.Point(1, 0);
+            this.transparentLabelClose.Size = new System.Drawing.Size(18, 19);
+            this.transparentLabelClose.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(27)))), ((int)(((byte)(48)))));
+            this.transparentLabelClose.TabIndex = 4;
+            this.transparentLabelClose.Text = "X";
+            this.transparentLabelClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.transparentLabelClose.Click += new System.EventHandler(this.transparentLabelClose_Click);
+            // 
+            // transparentLabelExText
+            // 
+            this.transparentLabelExText.BackColor = System.Drawing.Color.Transparent;
+            this.transparentLabelExText.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(26)))));
+            this.transparentLabelExText.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.transparentLabelExText.ForeColor = System.Drawing.Color.Black;
+            this.transparentLabelExText.FullShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.transparentLabelExText.FullShadowDepth = 2;
+            this.transparentLabelExText.FullShadowEnabled = false;
+            this.transparentLabelExText.GradientAngle = 45F;
+            this.transparentLabelExText.Location = new System.Drawing.Point(12, 266);
+            this.transparentLabelExText.Name = "transparentLabelExText";
+            this.transparentLabelExText.ShadowColor = System.Drawing.Color.Gray;
+            this.transparentLabelExText.ShadowEnabled = true;
+            this.transparentLabelExText.ShadowOffset = new System.Drawing.Point(1, 0);
+            this.transparentLabelExText.Size = new System.Drawing.Size(217, 17);
+            this.transparentLabelExText.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(27)))), ((int)(((byte)(48)))));
+            this.transparentLabelExText.TabIndex = 3;
+            this.transparentLabelExText.Text = "Downloading required offline files";
             // 
             // progressBarEx31
             // 
@@ -94,12 +120,15 @@ namespace Eigenverft.AirGap
             this.Controls.Add(this.MainPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(500, 320);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(500, 320);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.MainPanel.ResumeLayout(false);
-            this.MainPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -108,6 +137,7 @@ namespace Eigenverft.AirGap
 
         private System.Windows.Forms.Panel MainPanel;
         private ProgressBarEx3 progressBarEx31;
-        private TransparentLabelEx3 transparentLabelEx31;
+        private TransparentLabelEx3 transparentLabelExText;
+        private TransparentLabelEx3 transparentLabelClose;
     }
 }
